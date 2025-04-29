@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untukmu yang Paling Berarti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f7d9d9, #fff);
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 700px;
+      padding: 40px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background: #b30000;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #8f0000;
+    }
+
+    .letter {
+      display: none;
+      margin-top: 30px;
+      background: #fff0f0;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: left;
+      font-size: 1.1em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Maaf Jika Aku Belum Bisa Membahagiakanmu</h1>
+  <p>
+    Aku sadar... aku bukan orang yang sempurna.<br>
+    Tapi aku benar-benar ingin jadi seseorang yang bisa kamu banggakan dan bahagia bersamanya.<br>
+    Maukah kamu membaca isi hatiku?
+  </p>
+  <button class="button" onclick="showLetter()">Baca Suratku</button>
+
+  <div class="letter" id="letter">
+    <p>
+      Sayangku,<br><br>
+      Aku tahu... akhir-akhir ini kamu merasa kecewa. Mungkin kamu bertanya-tanya apakah aku benar-benar tahu caranya membuatmu bahagia.<br><br>
+      Tapi di balik semua kekuranganku, aku selalu punya satu niat yang tidak pernah berubah: ingin kamu bahagia, bersamaku. Walau caraku salah, niatku tulus.<br><br>
+      Aku mungkin tidak bisa memperbaiki semuanya sekarang. Tapi aku ingin belajar. Aku ingin tumbuh — bersamamu, untukmu. Asal kamu masih mau percaya, masih mau bertahan.<br><br>
+      Aku sayang kamu. Lebih dari yang bisa aku ungkapkan dengan kata-kata...<br><br>
+      – Aku
+    </p>
+  </div>
+</div>
+
+<audio autoplay loop>
+  <source src="https://file.garden/ZMPjqVhz7qem4PA9/Please_Dont_Cry_-_David_Fesliyan.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+  function showLetter() {
+    document.getElementById("letter").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
